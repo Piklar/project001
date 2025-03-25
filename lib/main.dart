@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'homepage_EDDM.dart';
+import 'signup_eddm.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -44,12 +45,12 @@ class _LoginFormState extends State<LoginForm> {
     String password = _passwordController.text;
 
     if (username.isNotEmpty && password.isNotEmpty){
-      //ScaffoldMessenger.of(context).showSnackBar(
+      // ScaffoldMessenger.of(context).showSnackBar(
       //  SnackBar(
       //    content: Text('Login Successful'),
-      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> HomepageEddm()));
+      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> SignUpPage()));
       //  ),
-      //);
+      // );
     } else {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
